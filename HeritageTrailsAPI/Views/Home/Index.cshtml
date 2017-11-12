@@ -1,0 +1,95 @@
+﻿@section scripts {
+    @Scripts.Render("~/bundles/index")
+}
+
+<div class="jumbotron">
+    <h1>Heritage Trails API</h1>
+    <p class="lead">Heritage trails is an app designed to help guide and inform people of some of Perth's heritage trails</p>
+</div>
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Trails</h2>
+            </div>
+            <div class="panel-body">
+                <ul class="list-unstyled" data-bind="foreach: trails">
+                    <li>
+                        <strong><span data-bind="text: TrailId"></span></strong>: <span data-bind="text: Name"></span>
+                        <small><a data-bind="click: $parent.getTrailDetail">Details</a></small><small>
+                        <!--<a href="#" data-bind="click: $parent.deleteTrail"> Delete</a></small>-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="alert alert-danger" data-bind="visible: error"><p data-bind="text: error"></p></div>
+    </div>
+
+    <!-- ko if:trailDetail() -->
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Details</h2>
+            </div>
+            <table class="table">
+                <tr><td>Trail Id</td><td data-bind="text: trailDetail().TrailId"></td></tr>
+                <tr><td>Name</td><td data-bind="text: trailDetail().Name"></td></tr>
+                <tr><td>Time</td><td data-bind="text: trailDetail().Time"></td></tr>
+                <tr><td>Length</td><td data-bind="text: trailDetail().Length"></td></tr>
+                <tr><td>Picture Location</td><td data-bind="text: trailDetail().PictureInt"></td></tr>
+            </table>
+            
+        </div>
+    </div>
+
+    <!-- /ko -->   
+</div>
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Stops</h2>
+            </div>
+            <div class="panel-body">
+                <ul class="list-unstyled" data-bind="foreach: stops">
+                    <li>
+                        <strong><span data-bind="text: StopId"></span></strong>: <span data-bind="text: Name"></span>
+                        <small><a href="#" data-bind="click: $parent.getStopDetail">Details</a></small>
+                        <!-- <small><a href="#" data-bind="click: $parent.deleteStop"> Delete</a></small>-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="alert alert-danger" data-bind="visible: error"><p data-bind="text: error"></p></div>
+    </div>
+
+    <!-- ko if:stopDetail() -->
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Details</h2>
+            </div>
+            <table class="table">
+                <tr><td>Stop Id</td><td data-bind="text: stopDetail().StopId"></td></tr>
+                <tr><td>Name</td><td data-bind="text: stopDetail().Name"></td></tr>
+                <tr><td>Short Desc</td><td data-bind="text: stopDetail().ShortDesc"></td></tr>
+                <tr><td>Full Desc</td><td data-bind="text: stopDetail().FullDesc"></td></tr>
+                <tr><td>Built</td><td data-bind="text: stopDetail().Built"></td></tr>
+                <tr><td>CoordX</td><td data-bind="text: stopDetail().CoordX"></td></tr>
+                <tr><td>CoordY</td><td data-bind="text: stopDetail().CoordY"></td></tr>
+                <tr><td>Picture Location</td><td data-bind="text: stopDetail().Image"></td></tr>
+                <tr><td>Trail Id</td><td data-bind="text: stopDetail().TrailId"></td></tr>
+            </table>
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+
+    <!-- /ko -->
+</div>
+
