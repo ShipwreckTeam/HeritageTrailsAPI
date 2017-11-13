@@ -98,6 +98,76 @@ namespace HeritageTrailsAPI.Migrations
                    Image = 2130837640,
                    VideoURL = "",
                    TrailId = 1
+               },
+               new Stop()
+               {
+                   StopId = 6,
+                   Name = "Claremont War Memorial",
+                   ShortDesc = "This memorial was designed by Edwin Summerhayes",
+                   FullDesc = "Full description goes here - s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                   Location = "	308 Stirling Highway",
+                   Built = "1922",
+                   CoordX = "-31.983168",
+                   CoordY = "115.781647",
+                   Image = 2130837636,
+                   VideoURL = "",
+                   TrailId = 2
+               },
+               new Stop()
+               {
+                   StopId = 7,
+                   Name = "Council Administration Building",
+                   ShortDesc = "Short description goes here",
+                   FullDesc = "Full description goes here - s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                   Location = "	Location goes here",
+                   Built = "1922",
+                   CoordX = "-31.983219",
+                   CoordY = "115.781644",
+                   Image = 2130837637,
+                   VideoURL = "",
+                   TrailId = 2
+               },
+               new Stop()
+               {
+                   StopId = 8,
+                   Name = "Claremont Park",
+                   ShortDesc = "Short description goes here",
+                   FullDesc = "Full description goes here - s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                   Location = "	Location goes here",
+                   Built = "1922",
+                   CoordX = "-31.983797",
+                   CoordY = "115.781515",
+                   Image = 2130837637,
+                   VideoURL = "",
+                   TrailId = 2
+               },
+               new Stop()
+               {
+                   StopId = 9,
+                   Name = "Once Convict Depot",
+                   ShortDesc = "Short description goes here",
+                   FullDesc = "Full description goes here - s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                   Location = "	Location goes here",
+                   Built = "1922",
+                   CoordX = "-31.983478",
+                   CoordY = "115.782186",
+                   Image = 2130837638,
+                   VideoURL = "",
+                   TrailId = 2
+               },
+               new Stop()
+               {
+                   StopId = 10,
+                   Name = "Bernard Street",
+                   ShortDesc = "Short description goes here",
+                   FullDesc = "The Claremont War Memorial was originally erected to commemorate the men and women of Claremont who enlisted in World War One.  It also commemorates those who fought in World War Two, Malaya, Korea, Borneo and Vietnam. The monument is built from Donnybrook stone with marble inserts on a rough cut granite foundation. This is set on a cruciform concrete base and is designed like a miniature Gothic church, the central spire and flying buttresses are topped with trefoil finials.",
+                   Location = "	Location goes here",
+                   Built = "1922",
+                   CoordX = "-31.983473",
+                   CoordY = "115.782536",
+                   Image = 2130837639,
+                   VideoURL = "",
+                   TrailId = 2
                }
            );
         }
